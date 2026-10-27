@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>کارنامه | سامانه تحلیل عملکرد دانش‌آموزان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+<aside class="side">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">۲۰</span>
+    <div><strong>کارنامه</strong><small>Student Analytics System</small></div>
+  </div>
+  <nav id="nav">
+    <button data-view="dashboard" class="on">داشبورد</button>
+    <button data-view="students">دانش‌آموزان</button>
+    <button data-view="grades">نمرات</button>
+    <button data-view="attendance">حضور و غیاب</button>
+  </nav>
+  <p class="side-note">نمرات از ۲۰ ثبت می‌شوند؛ نمره قبولی ۱۰ است.</p>
+</aside>
+<main>
+  <header class="top">
+    <h1 id="title">داشبورد</h1>
+    <span class="today" id="today"></span>
+  </header>
+  <section id="view" aria-live="polite"></section>
+</main>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
